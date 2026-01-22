@@ -1,0 +1,26 @@
+[project]
+name = "mac_forensics_mcp"
+version = "0.1.0"
+description = "MCP server for macOS Digital Forensics and Incident Response"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "biplist>=1.0.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+]
+
+[project.scripts]
+mac-forensics-mcp = "mac_forensics_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mac_forensics_mcp"]
