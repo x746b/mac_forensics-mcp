@@ -195,7 +195,7 @@ mac_unified_logs_security_events(
 mac_investigate_event(
     artifacts_dir="/path/to/triage",
     event_type="user_deletion",
-    target="loki"
+    target="username"
 )
 ```
 
@@ -240,7 +240,7 @@ mac_parse_fsck_apfs_log(
 ```python
 mac_get_user_timeline(
     artifacts_dir="/path/to/triage",
-    username="loki"
+    username="username"
 )
 ```
 
@@ -249,7 +249,7 @@ mac_get_user_timeline(
 ```python
 mac_fsevents_search(
     fseventsd_path="/path/to/.fseventsd",
-    path_filter="/Users/loki",
+    path_filter="/Users/username",
     event_types=["created", "deleted"]
 )
 ```
