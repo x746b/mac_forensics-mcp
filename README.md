@@ -1,6 +1,6 @@
-# mac_forensics-mcp
+<img src="mac_icon.png" width="150" alt="macOS Forensics MCP">
 
-**Author:** xtk
+# mac_forensics-mcp
 
 MCP (Model Context Protocol) server for macOS Digital Forensics and Incident Response (DFIR).
 
@@ -341,3 +341,11 @@ This MCP server was developed based on real-world macOS DFIR investigations. Key
 ## Contributing
 
 Based on lessons learned from macOS DFIR investigations. Additional tools and event patterns welcome.
+
+---
+
+## Author
+
+**xtk**
+
+Built for the DFIR community.
